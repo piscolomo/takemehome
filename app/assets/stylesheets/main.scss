@@ -1,0 +1,44 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+#main{
+	width: 70%;
+	margin: 0 auto;
+}
+
+header {
+	h1{
+		text-align: center;
+	}
+}
+
+#dogs{
+	text-align: center;
+	li{
+		display: inline-block;
+		width: 30%;
+		box-sizing: border-box;
+		border: 1px solid #ccc;
+		border-radius: 10px;
+		margin: 0 14px 20px 0 ;
+		padding: 20px;
+		img{
+			width: 85%;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+	a.btn{
+		color: #fff;
+		background: #81A3D0;
+		padding: 3px 0;
+		font-size: 15px;
+		text-align: center;
+		margin: 0 auto;
+		width: 120px;
+		display: block;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+}
