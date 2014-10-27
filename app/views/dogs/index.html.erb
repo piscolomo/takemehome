@@ -1,33 +1,8 @@
-<div id="main">
+<div id="main" ng-app="TakemehomeApp">
 	<header>
 		<h1>Take me home &#60;3</h1>	
 	</header>
 	<section>
-		<ul id="dogs">
-			<li>
-				<h3>Calvin</h3>
-				<%= image_tag "dog.jpg" %>
-				<p>Calvin is very funny! Have a great time with him!</p>
-				<a class="btn" href="">Adopt</a>
-			</li>
-			<li>
-				<h3>Calvin</h3>
-				<%= image_tag "dog.jpg" %>
-				<p>Calvin is very funny! Have a great time with him!</p>
-				<a class="btn" href="">Adopt</a>
-			</li>
-			<li>
-				<h3>Calvin</h3>
-				<%= image_tag "dog.jpg" %>
-				<p>Calvin is very funny! Have a great time with him!</p>
-				<a class="btn" href="">Adopt</a>
-			</li>
-			<li>
-				<h3>Calvin</h3>
-				<%= image_tag "dog.jpg" %>
-				<p>Calvin is very funny! Have a great time with him!</p>
-				<a class="btn" href="">Adopt</a>
-			</li>
-		</ul>
+		<div ng-view=""></div>
 	</section>
 </div>
