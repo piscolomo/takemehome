@@ -3,6 +3,13 @@
 		<h1>Take me home &#60;3</h1>	
 	</header>
 	<section>
+		<p>Do you have a dog to put up for adoption?
+			<% if user_signed_in? %>
+				<a href="">Register a dog</a>
+			<% else %>
+				<%= link_to "Sign in", new_user_session_path %>
+			<% end %>	
+		</p>
 		<div ng-view=""></div>
 	</section>
 </div>
