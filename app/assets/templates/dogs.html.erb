@@ -1,6 +1,25 @@
+<section id="search">
+	Search: <input type="text" ng-model="search.breed" placeholder="Breed">
+	<select ng-model="search.sex">
+		<option selected value="">--Sex--</option>
+		<option value="Male">Male</option>
+		<option value="Female">Female</option>
+	</select>
+	<select ng-model="search.size">
+		<option value="" selected>--Size--</option>
+		<option value="Small">Small</option>
+		<option value="Medium">Medium</option>
+		<option value="Large">Large</option>
+	</select>
+</section>
 <ul id="dogs">
-	<li ng-repeat="dog in dogs">
+	<li ng-repeat="dog in dogs | filter:search">
 		<h3>{{dog.name}}</h3>
+		<ul class="options">
+			<li>Breed: {{dog.breed}}</li>
+			<li>Sex: {{dog.sex}}</li>
+			<li>Size: {{dog.size}}</li>
+		</ul>
 		<img ng-src="uploads/{{dog.image}}" alt="">
 		<p>{{dog.description}}</p>
 		<a class="btn" href="">Adopt</a>

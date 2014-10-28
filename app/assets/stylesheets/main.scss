@@ -39,20 +39,49 @@ header {
 	}
 }
 
+#search{
+	width: 80%;
+	background: #DFDFDF;
+	color: #535353;
+	padding: 15px;
+	text-align: center;
+	border-radius: 8px;
+	margin: 0 auto;
+}
+
 #dogs{
 	text-align: center;
-	li{
+	padding-left: 0px;
+	> li{
 		display: inline-block;
-		width: 30%;
+		width: 48%;
 		box-sizing: border-box;
 		border: 1px solid #ccc;
 		border-radius: 10px;
 		margin: 0 14px 20px 0 ;
 		padding: 20px;
+		@media screen and (max-width: 800px) {
+			width: 100%;
+		}
 		img{
 			width: 85%;
 			margin: 0 auto;
 			display: block;
+		}
+		ul.options{
+			text-align: center;
+			margin-left: 0px;
+			padding-left: 0;
+			li{
+				display: inline-block;
+				padding: 5px 8px 5px 8px;
+				border-radius: 12px;
+				background: #DFDFDF;
+				text-align: center;
+				color: #535353;
+				font-size: 13px;
+				margin: 0 5px 12px 0;
+			}
 		}
 	}
 }
