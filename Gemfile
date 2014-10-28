@@ -43,4 +43,3 @@ gem 'bower-rails'
 gem 'angular-rails-templates'
 gem 'devise'
 gem 'pry-debugger'
-gem "cancan"
