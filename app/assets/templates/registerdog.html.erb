@@ -1,0 +1,24 @@
+<form name="DogForm" novalidate>
+	<table>
+		<tr><td><input type="text" ng-model="name" placeholder="Insert name" required></td></tr>
+		<tr><td><input type="text" ng-model="breed" placeholder="Insert breed" required></td></tr>
+		<tr><td>
+			<select name="sex" ng-model="sex" required>
+				<option selected value="">--Sex--</option>
+				<option value="Male">Male</option>
+				<option value="Female">Female</option>
+			</select>
+		</td></tr>
+		<tr><td>
+			<select name="size" ng-model="size" required>
+				<option value="" selected="selected">--Size--</option>
+				<option value="Small">Small</option>
+				<option value="Medium">Medium</option>
+				<option value="Large">Large</option>
+			</select>
+		</td></tr>
+		<tr><td>
+			<button on-click="registerDog()" ng-disabled="DogForm.$invalid">Register</button>
+		</td></tr>
+	</table>
+</form>

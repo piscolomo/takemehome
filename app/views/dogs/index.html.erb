@@ -5,7 +5,7 @@
 	<section>
 		<p>Do you have a dog to put up for adoption?
 			<% if user_signed_in? %>
-				<a href="">Register a dog</a>
+				<a href="#/register-dog">Register a dog</a>
 			<% else %>
 				<%= link_to "Sign in", new_user_session_path %>
 			<% end %>	

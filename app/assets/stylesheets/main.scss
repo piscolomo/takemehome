@@ -16,6 +16,19 @@ p.notice{
 	padding: 15px;
 }
 
+%btn{
+	color: #fff;
+	background: #81A3D0;
+	padding: 3px 0;
+	font-size: 15px;
+	text-align: center;
+	margin: 0 auto;
+	width: 120px;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
 header {
 	h1{
 		text-align: center;
@@ -39,15 +52,32 @@ header {
 		}
 	}
 	a.btn{
-		color: #fff;
-		background: #81A3D0;
-		padding: 3px 0;
-		font-size: 15px;
-		text-align: center;
-		margin: 0 auto;
-		width: 120px;
-		display: block;
-		text-decoration: none;
-		text-transform: uppercase;
+		@extend %btn;
 	}
+}
+
+form[name="DogForm"]{
+	.ng-invalid.ng-dirty { background-color: lightpink; }
+  .ng-valid.ng-dirty { background-color: lightgreen; }
+  width: 250px;
+  margin: 0 auto;
+  input[type="text"]{
+  	width: 250px;
+  	border-radius: 5px;
+  	border: 1px solid #ccc;
+  	padding: 5px;
+  	margin: 4px 0;
+  }
+  select{
+  	width: 260px;
+  	border-radius: 5px;
+  	border: 1px solid #ccc;
+  	padding: 5px;
+  	margin: 4px 0;
+  }
+  button{
+  	border: 0;
+  	@extend %btn;
+  }
+
 }
