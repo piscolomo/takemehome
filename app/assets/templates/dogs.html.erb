@@ -1,29 +1,8 @@
 <ul id="dogs">
-	<li ng-repeat="thing in things">
-	    {{thing}}
-	</li>
-	<!--<li>
-		<h3>Calvin</h3>
-		<%= image_tag "dog.jpg" %>
-		<p>Calvin is very funny! Have a great time with him!</p>
+	<li ng-repeat="dog in dogs">
+		<h3>{{dog.name}}</h3>
+		<img ng-src="{{dog.image}}" alt="">
+		<p>{{dog.description}}</p>
 		<a class="btn" href="">Adopt</a>
 	</li>
-	<li>
-		<h3>Calvin</h3>
-		<%= image_tag "dog.jpg" %>
-		<p>Calvin is very funny! Have a great time with him!</p>
-		<a class="btn" href="">Adopt</a>
-	</li>
-	<li>
-		<h3>Calvin</h3>
-		<%= image_tag "dog.jpg" %>
-		<p>Calvin is very funny! Have a great time with him!</p>
-		<a class="btn" href="">Adopt</a>
-	</li>
-	<li>
-		<h3>Calvin</h3>
-		<%= image_tag "dog.jpg" %>
-		<p>Calvin is very funny! Have a great time with him!</p>
-		<a class="btn" href="">Adopt</a>
-	</li>-->
 </ul>
