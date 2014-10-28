@@ -12,8 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require underscore
 //= require angular
 //= require angular-route
+//= require restangular
 //= require angular-rails-templates
 //= require_tree ../templates
 //= require_tree .

@@ -1,8 +1,9 @@
 angular
     .module('TakemehomeApp', [
         'ngRoute',
-        'templates'
-    ]).config(function ($routeProvider, $locationProvider) {
+        'templates',
+        'restangular'
+    ]).config(function ($routeProvider, $locationProvider, RestangularProvider) {
         $routeProvider
             .when('/', {
                 templateUrl: 'dogs.html',
@@ -16,4 +17,5 @@ angular
                 templateUrl: 'dogs.html',
             });
         //$locationProvider.html5Mode(true);
+         RestangularProvider.setBaseUrl('/api');
     });
