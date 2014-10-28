@@ -29,6 +29,10 @@ p.notice{
 	text-transform: uppercase;
 }
 
+a.btn{
+	@extend %btn;
+}
+
 header {
 	h1{
 		text-align: center;
@@ -50,9 +54,6 @@ header {
 			margin: 0 auto;
 			display: block;
 		}
-	}
-	a.btn{
-		@extend %btn;
 	}
 }
 
@@ -77,6 +78,7 @@ form[name="DogForm"]{
   }
   button{
   	border: 0;
+  	float: right;
   	@extend %btn;
   }
 

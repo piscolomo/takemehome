@@ -3,7 +3,10 @@ angular
         'ngRoute',
         'templates',
         'restangular'
-    ]).config(function ($routeProvider, $locationProvider, RestangularProvider) {
+    ]).config(function ($routeProvider, $locationProvider, $httpProvider, RestangularProvider) {
+        authToken = $("meta[name=\"csrf-token\"]").attr("content");
+        $httpProvider.defaults.headers.common["X-CSRF-TOKEN"] = authToken;
+
         $routeProvider
             .when('/', {
                 templateUrl: 'dogs.html',

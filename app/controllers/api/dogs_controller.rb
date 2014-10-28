@@ -12,10 +12,11 @@ module Api
     end
 
     def create
+      binding.pry 
       @dog = Dog.new(dog_params)
 
       if @dog.save
-        render json: @dog, status: 201, location: api_v1_dog_url(@dog[:id])
+        render json: @dog, status: 201, location: api_dog_url(@dog[:id])
       else
         render json: @dog.errors, status: 422
       end

@@ -42,3 +42,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'bower-rails'
 gem 'angular-rails-templates'
 gem 'devise'
+gem 'pry-debugger'
