@@ -1,5 +1,6 @@
 module Api
   class DogsController < ApplicationController
+    before_filter :authenticate_user!, only: :create
 
     def index
       @dogs = Dog.all
@@ -12,7 +13,6 @@ module Api
     end
 
     def create
-      binding.pry 
       @dog = Dog.new(dog_params)
 
       if @dog.save
