@@ -1,6 +1,8 @@
 angular.module('TakemehomeApp')
     .controller('DogCtrl', function ($scope, Restangular) {
 
+    	$scope.dog = {};
+
     	var baseDogs = Restangular.all('dogs');
 			
 			baseDogs.getList()
@@ -11,4 +13,5 @@ angular.module('TakemehomeApp')
 			$scope.registerDog = function(){
 				baseDogs.post($scope.dog);
 			}
+			
     });

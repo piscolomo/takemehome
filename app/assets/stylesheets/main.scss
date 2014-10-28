@@ -57,6 +57,11 @@ header {
 	}
 }
 
+form.dropzone{
+	width: 325px;
+	margin: 0 auto;
+}
+
 form[name="DogForm"]{
 	.ng-invalid.ng-dirty { background-color: lightpink; }
   .ng-valid.ng-dirty { background-color: lightgreen; }

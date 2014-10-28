@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require underscore
+//= require dropzone
 //= require angular
 //= require angular-route
 //= require restangular

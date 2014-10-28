@@ -1,6 +1,9 @@
+<form action="/file-upload" dropzone class="dropzone" id="my-dropzone">
+	<input type="file" name="file" />
+</form>
 <form name="DogForm" novalidate>
 	<table>
-		<tr><td colspan="2"><input type="text" ng-model="dog.name" placeholder="Insert name" required></td></tr>
+		<tr><td colspan="2"><input type="text" ng-model="dog.name" placeholder="Insert name" required></td></tr>		
 		<tr><td colspan="2"><input type="text" ng-model="dog.breed" placeholder="Insert breed" required></td></tr>
 		<tr><td colspan="2">
 			<select name="sex" ng-model="dog.sex" required>
